@@ -1,0 +1,11 @@
+module.exports = {
+    JWT_SECRET: process.env.JWT_SECRET,
+    NODE_ENV_DEV: process.env.NODE_ENV_DEV,
+    NODE_ENV_LOCAL: process.env.NODE_ENV_LOCAL,
+    NODE_PORTAL_DEVELOPER: process.env.NODE_PORTAL_DEVELOPER,
+    NODE_PORTAL_STAGING: process.env.NODE_PORTAL_STAGING,
+    NODE_PORTAL_PRODUCT: process.env.NODE_PORTAL_PRODUCT,
+    SERVER_SWAGGER: process.env.SERVER_SWAGGER,
+    EMAIL_USERNAME: process.env.EMAIL_USERNAME,
+    EMAIL_PASSWORD: process.env.EMAIL_PASSWORD
+}
