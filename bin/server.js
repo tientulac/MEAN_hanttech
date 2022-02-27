@@ -1,6 +1,6 @@
 const app = require('../app');
 const setupPort = require('../commons/setupPort');
-const routerAPI = require('../commons/routesAPI');
+const api = require('../apis/index');
 const handleError = require('../commons/handleErrors');
 const allowCors = require('../commons/enableCors');
 //--------------------------------------------------------CONNECT MONGO---------------------------------------------------
