@@ -1,6 +1,6 @@
 # Dockerfile  
-FROM node:8  
-WORKDIR /app  
+FROM node:16.15.0  
+WORKDIR /bin/server  
 COPY package.json /app  
 RUN npm install  --save-dev
 COPY . /app  

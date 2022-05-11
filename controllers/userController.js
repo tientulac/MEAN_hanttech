@@ -21,8 +21,7 @@ const encodedToken = (_isUser) => {
     let _token = jwt.sign({
         iss: 'Nguyen Ngoc Tien',
         sub: _isUser, //Thong tin user
-        iat: new Date().getDate(),
-        exp: new Date().setDate(new Date().getDate + 3) //Thoi han 3 ngay
+        iat: new Date().getDate()
     }, process.env.JWT_SECRET);
     return _token;
 }
@@ -48,7 +47,9 @@ exports.Login = async (req, res) => {
             UserName: req.body.UserName,
             Password: req.body.Password
         };
-        let reqUserName = req.body.UserName;
+        let reqUserName = {
+            UserName: req.body.UserName
+        } 
         // Check validation
         const { errors, isValid } = validateLogin(RequestUser);
         if (!isValid) {
